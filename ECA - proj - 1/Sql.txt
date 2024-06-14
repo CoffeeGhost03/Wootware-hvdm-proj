@@ -1,0 +1,16 @@
+CREATE DATABASE WootwareDatabase;
+
+USE WootwareDatabase;
+
+CREATE TABLE ProductDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    productName VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE OrderDetails (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orderDetails TEXT NOT NULL,
+    totalAmount DECIMAL(10, 2) NOT NULL,
+    orderDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
