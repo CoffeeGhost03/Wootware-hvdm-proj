@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Images/wootware-logo.png" alt="Wootware-Logo">
+        </div>
+        <button id="darkModeToggle" data-mode="light">
+            <img src="Images/Dark-Mode.png" alt="Light Mode">
+        </button>
+
+        <nav>
+            <a href="Wootware.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Deals</a>
+            <a href="#">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <section class="main-content">
+        <div class="container">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div id="order-total">
+                <strong>Total: </strong><span id="total-amount">0</span>
+            </div>
+            <button onclick="window.location.href='Wootware.html'">Continue Shopping</button>
+            <button id="checkoutButton" onclick="checkout()" disabled>Checkout</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
